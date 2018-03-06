@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Genrate Json files</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- Bulma Version 0.6.0 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+	html,body {
+		font-family: 'Open Sans';
+  	}
+	.json-pretty{
+		line-height :  1.3;
+		color : #66d9ef;
+		background  : #272822;
+	}
+	.json-pretty .json-key{
+		color : #F92672;
+	}
+	.json-pretty .json-value{
+		color : #A6E22E;
+	}
+	.json-pretty .json-string{
+		color :  #FD971F;
+	}
+	.json-pretty .json-boolean{
+		color : #AC81Fe;
+	}
+</style>
+</head>
+<body>
+	<!-- Root application -->
+	<section class="hero is-fullheight is-default is-bold">
+			<div class="hero-head">
+			  <nav class="navbar">
+				<div class="container">
+				  <div class="navbar-brand">
+					<a class="navbar-item jg__logo" href="../">
+					   JSON Generator
+					</a>
+					<span class="navbar-burger burger" data-target="navbarMenu">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</span>
+				  </div>
+				  <div id="navbarMenu" class="navbar-menu">
+					<div class="navbar-end">
+					  <a class="navbar-item is-active">
+						Home
+					  </a>
+					  <a class="navbar-item">
+						Examples
+					  </a>
+					  <a class="navbar-item">
+						Features
+					  </a>
+					  <a class="navbar-item">
+						Team
+					  </a>
+					  <a class="navbar-item">
+						Help
+					  </a>
+					</div>
+				  </div>
+				</div>
+			  </nav>
+			</div>
+			  <div class="hero-body">
+				<div class="container has-text-centered">
+				  <div class="columns is-vcentered">
+						<div id="root"></div>
+				  </div>
+				</div>
+			  </div>
+		  
+			  <div class="hero-foot">
+				<div class="container">
+				  <div class="tabs is-centered">
+					<ul>
+					  <li style="text-align: center;text-align: center;font-size: 14px;">Coded by<a href="">Mohamed Ben hartouz</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</section>
+
+	<script src="js/bundle.min.js"></script>
+</body>
+</html>
