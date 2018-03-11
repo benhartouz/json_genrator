@@ -31,6 +31,7 @@ export default class JsonEditor extends Component{
 		return (
 			<div className="docEditor">
 			  <h1 style={styles.headText}>Json Genrating:</h1>	
+			  <p style={{ textAlign: 'left' , color: '#999' , fontSize: '14px' }}>PS: Click to extend json object</p>	
 			  <ObjectAttribute value={ this.state.store.json } original={ this.state.original.json }/>
 			  <h1 style={styles.headText}>Json Preview:</h1>
 		      <div style={{ clear: "both" }}></div>
