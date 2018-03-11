@@ -1,5 +1,5 @@
 # json_genrator
-this app for generating json object 
+app for genrating json using interface graphique
 
 # Web Coding Challenge React/Nodejs(Express) 
 
