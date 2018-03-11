@@ -2,20 +2,13 @@ import React from 'react';
 import JsonEditor from './JsonEditor';
 import Freezer from 'freezer-js';
 
-/****************
-JSON data to edit
-*****************/
-var json = {
-	hola: 'amigo',
-	adios:'enemigo',
-	obj: { hi: 'man', bye: 'dude' },
-	arr: ['a', 'b', {c: 1}, 'd']
-};
+var json = {};
+
 // Create a Freezer store
 var frozen = new Freezer( { json: json });
 
 const App = () => (
-    <JsonEditor store={ frozen.get() } original={ frozen.get() } />
+    <JsonEditor store={ frozen.get() } original={ frozen.get() } frozen={frozen}/>
 );
 
 export default App;

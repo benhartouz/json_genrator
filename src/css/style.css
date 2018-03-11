@@ -1,7 +1,15 @@
+#root{
+  width: 100%;
+}
 .docEditor > .objectAttr {
     float: left;
     text-align: left;
-  }
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.json-pretty{
+  width: 100%;
+}
   .modified {
     font-weight: bold;
   }
@@ -46,7 +54,7 @@
     border: 1px solid #ddd;
     padding: 5px;
     float: left;
-    width: 180px;
+    width: 600px;
     margin: 0 10px 0 0;
     text-align: left;
   }

@@ -1,7 +1,9 @@
 var typeDefaultValues = {
-	string: '',
-	object: {},
-	array: []
+	string : '',
+	object : {},
+	array  : [],
+	number : '' ,
+	bool : ''
 }
 
 export default typeDefaultValues;

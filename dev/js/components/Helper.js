@@ -2,6 +2,9 @@ import React , {Component} from 'react';
 import StringAttribute from "./StringAttribute";
 import ObjectAttribute from "./ObjectAttribute";
 import ArrayAttribute from "./ArrayAttribute";
+import NumberAttribute from "./NumberAttribute";
+import BooleanAttribute from "./BooleanAttribute";
+import typeDefaultValues from './Types';
 
 
 export default class Helper extends  Component{
@@ -28,8 +31,12 @@ export default class Helper extends  Component{
     
         if( type == 'object' )
             className = ObjectAttribute;
-        else if( type == 'array' )
+        else if ( type == 'array' )
             className = ArrayAttribute;
+        else if ( type == 'number' )
+            className = NumberAttribute;
+        else if ( type == 'bool' )
+            className = BooleanAttribute;
     
         if( typeof original == 'undefined' )
             original = typeDefaultValues[ type ];

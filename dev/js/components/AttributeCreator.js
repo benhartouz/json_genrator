@@ -28,7 +28,7 @@ export default class AttributeCreator extends  Component{
 			attrName =  <span className="attrName">{this.props.attrkey}:</span>;
 		else {
 			attrName = [
-				<input ref="keyInput" type="text" value={this.state.value} onChange={this.changeKey}/>,
+				<input ref={ (keyInput) => { this.textInput = keyInput } } type="text" value={this.state.value} onChange={this.changeKey}/>,
 				<span>:</span>
 			];
 		}
@@ -37,8 +37,10 @@ export default class AttributeCreator extends  Component{
 				{ attrName }
 				<select value={this.state.type} onChange={ this.changeType } ref="typeSelector">
 					<option key="string" value="string">String</option>
-					<option key="array" value="array">List</option>
-					<option key="object" value="object">Map</option>
+					<option key="number" value="number">Number</option>
+					<option key="bool" value="bool">Boolean</option>
+					<option key="array" value="array">Array</option>
+					<option key="object" value="object">Object</option>
 				</select>
 				<button onClick={ this.createAttribute }>OK</button>,
 				<a href="#" className="cancelAttr" onClick={ this.handleCancel }>Cancel</a>
@@ -47,10 +49,10 @@ export default class AttributeCreator extends  Component{
 
 	componentDidUpdate( prevProps, prevState){
 		if( !prevState.creating && this.state.creating ){
-			/*if( this.refs.keyInput )
-				this.refs.keyInput.getDOMNode().focus();
+			if( this.refs.keyInput )
+				this.textInput.focus();
 			else
-				this.refs.typeSelector.getDOMNode().focus();*/
+				this.textInput.focus();
 		}
 	}
 

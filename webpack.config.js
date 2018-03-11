@@ -9,12 +9,23 @@ module.exports = {
     },
     devtool: 'cheap-module-eval-source-map',
     entry: './dev/js/index.js',
+    node: {
+        console: false,
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty',
+        target: 'node'
+    },
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 loaders: ['babel'],
                 exclude: /node_modules/
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader'
             }
         ]
     },

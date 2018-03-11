@@ -23,7 +23,7 @@ export default class StringAttribute  extends Component{
 		if( !this.state.editing )
 			return <span onClick={ this.setEditMode } className={ className }>{ this.props.value }</span>;
 
-		return <input value={ this.state.value } onChange={ this.updateValue } onBlur={ this.setValue } ref={ (input) => { this.textInput  = input } } id="input_string" onKeyDown={this.handleKeyDown} />;
+		return <input placeholde="Key name" value={ this.state.value } onChange={ this.updateValue } onBlur={ this.setValue } ref={ (input) => { this.textInput  = input } } id="input_string" onKeyDown={this.handleKeyDown} />;
 	}
 
 	componentDidUpdate( prevProps, prevState ){

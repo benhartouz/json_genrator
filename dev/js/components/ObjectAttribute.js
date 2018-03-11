@@ -37,7 +37,7 @@ export default class ObjectAttribute extends Component{
 		</div>);
 
 		return (<span className={ className }>
-				<span onClick={ this.toggleEditing } className="hashToggle">Map [{ keys.length }]</span>
+				<span onClick={ this.toggleEditing } className="hashToggle">Object [{ keys.length }]</span>
 				{openHash}
 			</span>)
 		;

@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 
-export default class StringAttribute  extends Component{
+export default class NumberAttribute  extends Component{
     constructor(props){
         super(props);
         this.state =  {
